@@ -1,0 +1,8 @@
+{
+    "name": "James/curl",
+    "description": "curl package",
+    "license": "BSD-3-Clause",
+    "require": {
+        "php": ">=5.3.3"
+    }
+}

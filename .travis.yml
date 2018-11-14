@@ -5,9 +5,6 @@ php:
   - 5.6
   - 7.0
 
-install:
-  - composer install --prefer-dist --no-dev --optimize-autoloader --quiet
-
 notifications:
   email:
     recipients:
@@ -15,4 +12,8 @@ notifications:
     on_success: always
     on_failure: always
 
-script: phpunit -c phpunit.xml --coverage-text
+before_script:
+  - composer install
+  - cd tests
+
+script: phpunit -v
