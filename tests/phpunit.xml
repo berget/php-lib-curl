@@ -1,7 +1,8 @@
-<phpunit bootstrap="./Bootstrap.php" colors="true">
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="./Bootstrap.php">
     <testsuites>
-        <testsuite name="lib Test Suite">
-            <directory>./libTest</directory>
+        <testsuite name="lib-Test-Suite">
+            <directory suffix="Test.php">./libTest</directory>
         </testsuite>
     </testsuites>
     <filter>

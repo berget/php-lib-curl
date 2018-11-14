@@ -3,6 +3,21 @@
     "description": "curl package",
     "license": "BSD-3-Clause",
     "require": {
-        "php": ">=5.3.3"
+        "php": ">=5.3.3",
+        "imagine/Imagine": "dev-master"
+    },
+    "require-dev": {
+        "rmccue/Requests": "dev-master@dev",
+        "aferrandini/phpqrcode": "dev-master@dev"
+    },
+    "autoload": {
+        "classmap": [
+            "src/lib"
+        ],
+        "psr-0": {
+            "lib": "src",
+            "Requests": "library/",
+            "PHPQRCode": "lib/"
+        }
     }
 }
