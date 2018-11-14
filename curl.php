@@ -105,7 +105,7 @@ class Curl {
 		curl_setopt($this->_curl_, CURLOPT_URL, $url);
 
 		$curldata = curl_exec($this->_curl_); 
-	  $this->_httpcode_ = curl_getinfo($this->_curl_, CURLINFO_HTTP_CODE); 
+		$this->_httpcode_ = curl_getinfo($this->_curl_, CURLINFO_HTTP_CODE); 
 		
 		return $curldata;
 	}
@@ -132,7 +132,7 @@ class Curl {
 		}
 
 		$curldata = curl_exec($this->_curl_);
-	  $this->_httpcode_ = curl_getinfo($this->_curl_, CURLINFO_HTTP_CODE); 
+		$this->_httpcode_ = curl_getinfo($this->_curl_, CURLINFO_HTTP_CODE); 
 
 		return $curldata;
 	}
